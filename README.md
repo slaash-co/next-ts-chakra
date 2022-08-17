@@ -32,3 +32,11 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## Slaash Template Rule
+
+### Import Between Layers
+
+Typically, an inner layer cannot import from an outer layer: that means that core cannot import from lib and components, and the latter cannot import from pages. his rule can ensure your core is decoupled from the domain to avoid cyclical dependencies and keep your architecture untangled.
+
+rsc: https://giancarlobuomprisco.com/next/a-scalable-nextjs-project-structure
